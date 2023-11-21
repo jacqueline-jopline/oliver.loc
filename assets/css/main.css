@@ -1,0 +1,26 @@
+body {
+    background-color: #313741;
+}
+
+nav, ul, ol {
+    list-style: none;
+}
+
+.menu-top {
+    width: 100%;
+    position: fixed;
+    font-size: 20px;
+    padding: 35px 0px;
+}
+
+.menu-top a, .menu-burger {
+    color: white;
+}
+
+.menu-socials {
+    display: flex;
+}
+
+.menu-socials li {
+    margin-right: 15px;
+}
