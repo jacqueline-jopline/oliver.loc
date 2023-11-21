@@ -1,3 +1,7 @@
+*{
+    font-family: Open Sans;
+}
+
 body {
     background-color: #313741;
 }
@@ -11,6 +15,7 @@ nav, ul, ol {
     position: fixed;
     font-size: 20px;
     padding: 35px 0px;
+    z-index: 9999;
 }
 
 .menu-top a, .menu-burger {
@@ -23,4 +28,43 @@ nav, ul, ol {
 
 .menu-socials li {
     margin-right: 15px;
+}
+
+header {
+    height: 100vh;
+    background: url(/assets/img/header-bg.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header:after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.8;
+    background: var(--gradient, linear-gradient(90deg, #17D396 0%, #07F7F7 100%));
+}
+
+.header-info {
+    position: relative;
+    z-index: 1;
+}
+
+.header-info h1 {
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.header-info h2 {
+    font-size: 84px;
+    font-weight: 400;
+}
+
+.header-info div {
+    font-size: 25px;
+    font-weight: 400;
 }
