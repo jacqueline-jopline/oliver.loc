@@ -58,6 +58,8 @@ h3 {
     color: var(--green);
 }
 
+/*-----------------menu-top start-----------------*/
+
 .menu-top {
     width: 100%;
     position: fixed;
@@ -78,6 +80,10 @@ h3 {
     margin-right: 15px;
 }
 
+/*-----------------menu-top end-----------------*/
+
+/*-----------------header start-----------------*/
+
 .header-info {
     position: relative;
     z-index: 1;
@@ -97,6 +103,10 @@ h3 {
     font-size: 25px;
     font-weight: 400;
 }
+
+/*-----------------header-info end-----------------*/
+
+/*-----------------about start-----------------*/
 
 .profile {
     position: relative;
@@ -152,6 +162,10 @@ h3 {
 .about h2 {
     margin: unset;
 }
+
+/*-----------------about end-----------------*/
+
+/*-----------------education & xp start-----------------*/
 
 .timeline {
     display: flex;
@@ -216,3 +230,43 @@ h3 {
 .work-xp {
     background-color: var(--bg1);
 }
+
+/*-----------------education & xp end-----------------*/
+
+/*-----------------skills start-----------------*/
+.skills {
+    background-color: var(--bg2);
+    color: white;
+}
+
+.skill-line {
+    background-color: black;
+    height: 6px;
+    display: flex;
+}
+
+.skill-xp {
+    height: 100%;
+    width: 0%;
+    background-color: var(--green);
+}
+
+.skill-dot {
+    background-color: var(--green);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-left: -5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.skill-dot span {
+    position: absolute;
+    margin-top: -5px;
+}
+
+/*-----------------skills end-----------------*/
+
