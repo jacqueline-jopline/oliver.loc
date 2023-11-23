@@ -212,3 +212,7 @@ h3 {
     background-color: var(--green);
     border-radius: 50%;
 }
+
+.work-xp {
+    background-color: var(--bg1);
+}
