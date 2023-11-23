@@ -6,6 +6,7 @@
     --bg1:#22252C;
     --bg2:#313741;
     --green:#00D7BB;
+    --grey:#58616D;
 }
 
 body {
@@ -239,6 +240,10 @@ h3 {
     color: white;
 }
 
+.skill-wrapper.margin {
+    margin-bottom: 50px;
+}
+
 .skill-line {
     background-color: black;
     height: 6px;
@@ -265,8 +270,63 @@ h3 {
 
 .skill-dot span {
     position: absolute;
-    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 /*-----------------skills end-----------------*/
 
+/*-----------------contact start-----------------*/
+
+.contact-me {
+    background-color: var(--bg1);
+}
+
+.contact-me textarea, .contact-me input {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid var(--grey);
+    outline: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-me textarea {
+    height: 235px;
+}
+
+.contact-me textarea:focus, .contact-me input:focus {
+    border-bottom-color: var(--green);
+}
+
+.contact-me textarea:focus ~ label, .contact-me input:focus ~ label{
+    border-bottom-color: var(--green);
+    font-size: 12px;
+    top: -16px;
+    color: var(--green);
+}
+
+label {
+    color: var(--grey);
+    position: absolute;
+    left: 15px;
+    transition: 0.3s;
+}
+
+.contact-me .row {
+    margin-bottom: 50px;
+}
+
+.contact-me button {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding: 10px 46px;
+    border: 1px solid var(--gradient, #17D396);
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--green);
+}
+
+/*-----------------contact end-----------------*/
