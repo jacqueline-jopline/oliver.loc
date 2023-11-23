@@ -2,12 +2,60 @@
     font-family: Open Sans;
 }
 
+:root {
+    --bg1:#22252C;
+    --bg2:#313741;
+    --green:#00D7BB;
+}
+
 body {
-    background-color: #313741;
+    background-color: var(--bg2);
 }
 
 nav, ul, ol {
     list-style: none;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(23, 211, 150, 0.80) 0%, rgba(7, 247, 247, 0.80) 100%), url("/assets/img/header-bg.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+h2:not(.header) {
+    width: fit-content;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    background: linear-gradient(90deg, #17D396 0%, #07F7F7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+h3 {
+    color: var(--green);
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.icon {
+    border-radius: 50%;
+    border: 1px solid var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
 }
 
 .menu-top {
@@ -30,15 +78,6 @@ nav, ul, ol {
     margin-right: 15px;
 }
 
-header {
-    height: 100vh;
-    background: linear-gradient(90deg, rgba(23, 211, 150, 0.80) 0%, rgba(7, 247, 247, 0.80) 100%), url("/assets/img/header-bg.jpg") center no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
 .header-info {
     position: relative;
     z-index: 1;
@@ -57,11 +96,6 @@ header {
 .header-info div {
     font-size: 25px;
     font-weight: 400;
-}
-
-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .profile {
@@ -88,7 +122,7 @@ section {
     position: absolute;
     height: 100%;
     width: 100%;
-    border: 7px solid #00D7BB;
+    border: 7px solid var(--green);
     z-index: 0;
     top: -60px;
     left: 60px;
@@ -109,4 +143,72 @@ section {
 
 .button-download-cv:hover {
     color: white;
+}
+
+.about {
+    background-color:var(--bg1);
+}
+
+.about h2 {
+    margin: unset;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline .text {
+    color: white;
+}
+
+.timeline-head {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.timeline-content {
+    padding: 70px 0px;
+    position: relative;
+}
+
+.timeline-content::before{
+    content: "";
+    background-color: var(--green);
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    margin-top: -70px;
+    left: calc(50% - 1px);
+}
+
+.timeline-block {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.timeline-block .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+    background-color: var(--bg2);
+    z-index: 2;
+}
+
+.timeline-block:last-child {
+    margin-bottom: 0px;
+}
+
+.left {
+    text-align: right;
+}
+
+.timeline-footer {
+    width: 15px;
+    height: 15px;
+    background-color: var(--green);
+    border-radius: 50%;
 }
